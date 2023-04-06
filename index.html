@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Movies</title>
+    <!-- Links -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header >
+        <!-- Logo For Your Web -->
+        <a href="" class="logo">
+            <img src="img/logo.png">
+        </a>
+        <!-- Nav -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#series">Series</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- Form -->
+        </nav>
+        <form class="form-1" action="#">
+            <div class="form-content">
+                <label>
+                <input type="search" placeholder="Search">
+                    <i class="fa fa-search"></i></label>
+                <button class="Login-btn">Login</button>
+            </div>
+        </form>
+
+        <!-- Collapse icon -->
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </header>
+    <!-- Wrapper Section -->
+    <div class="wrapper">
+        <span class="icon-close">
+        <i class="fa-solid fa-close"></i>
+        </span>
+        <!-- Login Form -->
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <!-- ----------------- -->
+                <div class="input-box">
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <!-- ----------------- -->
+                <div class="remember-forgot">
+                    <label><input type="checkbox"> Remember me</label>
+                    <a href="#">Forgot Password</a>
+                </div>
+                    <button type="submit" class="btn0">Login</button>
+                    <div class="login-register">
+                        <p>Don't Have An Account?
+                            <a href="#" class="register-link">Register</a>
+                        </p>
+                    </div>
+            </form>
+        </div>
+
+        <!-- Register Form -->
+        <div class="form-box register">
+            <h2>Register</h2>
+            <form action="#">
+                <div class="input-box">
+                    <input type="name" required>
+                    <label>Username</label>
+                </div>
+
+                <div class="input-box">
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <!-- ----------------- -->
+                <div class="input-box">
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <!-- ----------------- -->
+                <div class="remember-forgot">
+                    <label><input type="checkbox"> I agree to the terms & conditions.</label>
+                </div>
+                    <button type="submit" class="btn0">Register</button>
+                    <div class="login-register">
+                        <p>Already Have An Account?
+                            <a href="#" class="login-link">Login</a>
+                        </p>
+                    </div>
+            </form>
+        </div>
+    </div>
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <div class="main-text">
+                <h1>Mo<span>vi</span>es</h1>
+                <p>Join Now To Watch The Newest <span>Movies</span>  And <span>Series.</span></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                    Magnam quo sunt voluptatem delectus. Illo odit, cum error atque sed harum.</p>
+                <button class="Login-btn2">Join</button>
+            </div>
+            <!-- ------------------------- -->
+            <div class="main-videos">
+                <video id="slider" autoplay loop muted >
+                        <source src="video/john wick.webm" type="video/mp4">
+                </video> 
+                <h1><SPAN>C</SPAN>O<span>M</span>I<SPAN>N</SPAN>G <span>S</span>OO<span>N</span></h1>
+                <ul class="navigation">
+                    <li onclick="videoUrl('video/john wick.webm')"><img src="img/Jhon Wick.jpg"></li>
+                    <li onclick="videoUrl('video/jurasic world-.mp4')"><img src="img/jurassic world.jpg"></li>
+                    <li onclick="videoUrl('video/theboys.mp4')"><img src="img/the boys.jpg"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- ---------------- -->
+    <hr>
+    <!-- ---------------- -->
+    <!-- Movies Section -->
+    <section id="movies">
+        <h1>Mo<span>vi</span>es</h1>
+        <div class="container">
+            <div class="slider">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <div class="carousel">
+                    <img src="img/ant man.jpg" draggable="false">
+                    <img src="img/ant man1.jpg" draggable="false">
+                    <img src="img/avengers.jpg" draggable="false">
+                    <img src="img/avengers1.jpg" draggable="false">
+                    <img src="img/collage romance.jpg" draggable="false">
+                    <img src="img/collage romance1.jpg" draggable="false">
+                    <img src="img/eesho.jpeg" draggable="false">
+                    <img src="img/eesho1.jpg" draggable="false">
+                    <img src="img/eternals.jpg" draggable="false">
+                    <img src="img/eternals1.webp" draggable="false">
+                    <img src="img/favicon.png" draggable="false">
+                    <img src="img/Jhon Wick.jpg" draggable="false">
+                </div>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
+            <hr>
+            <div class="slider2">
+                <i id="left2" class="fa-solid fa-angle-left"></i>
+                <div class="carousel2">
+                    <img src="img/jhon wick1.webp" draggable="false">
+                    <img src="img/jurassic world.jpg" draggable="false">
+                    <img src="img/jurassic world1.jpg" draggable="false">
+                    <img src="img/KGF.jpg" draggable="false">
+                    <img src="img/kota factory.jpg" draggable="false">
+                    <img src="img/kota factory1.webp" draggable="false">
+                    <img src="img/money heist.jpg" draggable="false">
+                    <img src="img/money heist1.jpg" draggable="false">
+                    <img src="img/spiderman1.jpg" draggable="false">
+                    <img src="img/moon knight.jpg" draggable="false">
+                    <img src="img/moon knight1.webp" draggable="false">
+                    <img src="img/spiderman.jpg" draggable="false">
+                </div>
+                <i id="right2" class="fa-solid fa-angle-right"></i>
+            </div> 
+        </div>
+    </section>
+    <!-- --------------------------------------- -->
+    <!-- ---------------- -->
+    <!-- Series Section -->
+    <section id="series">
+        <h1>Se<span>ri</span>es</h1>
+        <div class="container2">
+            <div class="slider3">
+                <i id="left3" class="fa-solid fa-angle-left"></i>
+                <div class="carousel3">
+                    <img src="img/eternals.jpg" draggable="false">
+                    <img src="img/collage romance.jpg" draggable="false">
+                    <img src="img/ant man1.jpg" draggable="false">
+                    <img src="img/jhon wick1.webp" draggable="false">
+                    <img src="img/moon knight.jpg" draggable="false">
+                    <img src="img/moon knight1.webp" draggable="false">
+                    <img src="img/spiderman1.jpg" draggable="false">
+                    <img src="img/the boys1.jpg" draggable="false">
+                    <img src="img/thor love of thunder1.avif" draggable="false">
+                    <img src="img/uncharted.webp" draggable="false">
+                    <img src="img/spiderman.jpg" draggable="false">
+                    <img src="img/uncharted1.jpg" draggable="false">
+                    
+                </div>
+                <i id="right3" class="fa-solid fa-angle-right"></i>
+            </div>
+            <hr>
+            <div class="slider4">
+                <i id="left4" class="fa-solid fa-angle-left"></i>
+                <div class="carousel4">
+                    <img src="img/ant man.jpg" draggable="false">
+                    <img src="img/jhon wick1.webp" draggable="false">
+                    <img src="img/jurassic world1.jpg" draggable="false">
+                    <img src="img/topgun1.jpg" draggable="false">
+                    <img src="img/the boys1.jpg" draggable="false">
+                    <img src="img/money heist.jpg" draggable="false">
+                    <img src="img/spiderman1.jpg" draggable="false">
+                    <img src="img/moon knight.jpg" draggable="false">
+                    <img src="img/collage romance1.jpg" draggable="false">
+                    <img src="img/eternals.jpg" draggable="false">
+                    <img src="img/favicon.png" draggable="false">
+                    <img src="img/collage romance.jpg" draggable="false">
+                </div>
+                <i id="right4" class="fa-solid fa-angle-right"></i>
+            </div> 
+            <hr>
+        </div>
+    </section>
+    <!-- ---------------- -->
+    <hr>
+    <!-- ---------------- -->
+    <!-- About Section -->
+    <section id="about">
+        <h1>Ab<span>ou</span>t</h1>
+        <div class="container">
+            <h2><img src="img/logo2.png"> Is A Company That Produce Most Newest <span>Movies</span> and <span>Series</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, ut facilis maxime accusantium cumque laudantium pariatur, 
+                asperiores, aperiam velit iusto a repellat molestiae quam saepe vitae! Qui iste fugit ipsum. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Cumque ex vero exercitationem est possimus aperiam dolore id omnis sunt. Inventore quae tenetur 
+                a excepturi pariatur fugit voluptates minus dolor Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat aperiam 
+                ullam sit reprehenderit eum, maxime labore tempore, quasi sapiente quae vitae, qui ea nemo. Inventore minima facere maxime 
+                repellendus ab, odio hic facilis, perspiciatis fuga recusandae ipsum cum, magnam consequuntur voluptas. Enim eum, suscipit 
+                sint nihil accusamus quaerat eveniet nobis illo officia voluptates molestiae pariatur cupiditate quo accusantium dignissimos 
+                fuga expedita unde nemo obcaecati voluptatibus dolorem in architecto dolores? Minima, similique beatae maiores velit odio 
+                doloremque harum numquam a optio tenetur magni saepe earum, esse ad ducimus fugit molestias ipsa odit. Excepturi ipsum nemo 
+                ex quaerat ullam ab rerum quae a, voluptas veritatis eligendi? Ab et, ad repudiandae, quaerat harum placeat reprehenderit 
+                dolore at, sunt vel facere deleniti? Cupiditate blanditiis numquam quia recusandae aliquam nemo illum iste fugit consectetur 
+                error et quasi a obcaecati enim voluptas tenetur voluptatibus tempore, ut est quae accusamus totam dicta unde. Aperiam sapiente 
+                nobis quod?
+            </p>
+        </div>
+    </section>
+    <!-- ---------------- -->
+    <hr>
+    <!-- ---------------- -->
+    <!-- Contact Section -->
+    <!-- Contact Section Start -->
+    <section id="contact">
+        <div class="center">
+            <h1><span>Co</span>nta<span>ct</span></h1>
+            <div class="conter"></div>
+            <h3>Our <span>Social</span> Media</h3>
+            <div class="social">
+                <div class="row">
+                    <img src="img/facebook-icon.png">
+                    <img src="img/instagram-icon.png">
+                    <img src="img/whatsapp-icon.png">
+                </div>
+                <div class="row">
+                    <img src="img/snapchat-icon.png">
+                    <img src="img/linkedin-icon.png">
+                    <img src="img/twitter-icon.png">
+                </div>
+            </div>
+            <div class="contact">
+                <div class="text">
+                    <a href=""><img src="img/logo2.png"></a>
+                    <p>Lorem, ipsum dolor sit amet consectetur 
+                        adipisicing elit. Cum iure quasi rem! 
+                        Obcaecati, earum facere placeat nihil quia 
+                        vitae facilis, aut qui illo deleniti accusantium 
+                        quasi repudiandae accusamus perspiciatis 
+                        nisi neque molestias ratione ex omnis 
+                        laudantium saepe. Necessitatibus mollitia 
+                        eaque unde sit, minus cupiditate nihil 
+                        voluptates. Delectus nemo quisquam tempora 
+                        eligendi vitae magnam tempore amet culpa ad, impedit 
+                        molestias earum laboriosam cumque tenetur fuga voluptates omnis 
+                        esse quibusdam corrupti? Architecto possimus aliquid, 
+                        optio mollitia autem magnam eaque repellendus tenetur maxime.
+                    </p>
+                </div>
+                <div class="form">
+                    <label><input type="text" placeholder="Username"></label>
+                    <label><input type="email" placeholder="Email"></label>
+                    <button type="submit">Submit</button>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+        <!-- Contact Section End -->
+    <script src="index.js"></script>
+</body>
+</html>
